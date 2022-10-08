@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<title>MyApp Release Note - Android</title>
+	<style>
+		body { background-color: #111111; margin:0px; padding:0px; }
+		body, div { font-family: sans-serif, Helvetica, courier, verdana; font-size:14pt; line-height: 150%; color:#DDDDDD; }
+		a:link, a:visited, a:hover, a:active { color:#AAFFDD; text-decoration: none; }
+		.textButton {background-color:#000000; padding:8px 20px 8px 20px; border: 3px dotted #AAFFDD; }
+		.txtBig{ font-size: 22pt; font-weight: bold }
+		.button_bar { width:180px; padding:2px; }
+		.container{
+			display: block;
+		  	height:300px;
+		  	padding:0px;
+		  	margin:0px;
+			text-align: center;
+			background-color: #101020;
+		}
+		.backImage{
+			display: block;
+			width : 100%;
+			max-height: 300px;
+			min-height:300px;
+			object-fit: cover;
+			position:absolute;
+			z-index: 0;
+			opacity: 0.4;
+			
+		}
+		.contents{
+			height:100%;
+			position:relative;
+			z-index:1;
+			text-shadow:
+				0px 0px 10px #000000,
+				0px 1px 14px #000000,
+				1px 2px 20px #000000;
+			padding:20px;
+		}
+
+		.backFar{
+			position:fixed;
+			display:block;
+			opacity:0.3;
+			z-index:-1;
+
+			max-width: 100%;
+			min-width: 100%;
+			max-height: 100%;
+			min-height: 100%;
+			object-fit: cover;
+		}
+
+		/* added */
+		.imgIconSmall { width:30px; }
+		.imgIconMiddle { width:48px; }
+		.alignCenter { text-align: center; }
+		.alignMiddle { vertical-align: middle;}
+
+		.spaceS { height:10px; border:none; margin:0; padding:0; }
+		.spaceM { height:20px; border:none; margin:0; padding:0; }
+		.spaceL { height:40px; border:none; margin:0; padding:0; }
+
+		.mainImageContainer { display: block; height:350px; padding:0px; margin:0px; text-align: center; }
+		.mainImage { display: block; width : 100%; max-height: 350px; min-height:350px; object-fit: cover; position:absolute; z-index: 0; opacity: 1.0;}
+		.mainTextOnImage { height:100%; position:relative; z-index:1; text-shadow: 0px 0px 10px #000000, 0px 1px 14px #000000, 1px 2px 20px #000000; padding:10px; }
+		
+		/* marquee */
+		.marquee {
+			height: 40px;	
+			overflow: hidden;
+			position: relative;
+			color: #AAFFDD;
+			width : 100%
+		}
+		.marquee p {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			line-height: 40px;
+			
+			/* Starting position */
+			transform:translateX(100%);			
+			
+			animation-name : slide;
+			animation-duration : 15s;
+			animation-timing-function : linear;
+			animation-iteration-count: infinite;
+		}
+		/* Move it (define the animation) */
+		@keyframes slide {
+			0%   { transform: translateX(100%); }
+			100% { transform: translateX(-100%); }
+		}
+	</style>
+</head>
+<body>
+	<div class="alignCenter">
+		내앱 Android 릴리즈 노트
+	</div>
+
+	<!-- footer -->
+	<hr class="spaceL">
+	<div class="alignCenter">
+		<a href="mailto:theangels0621@gmail.com">Email</a> |
+		<a href="policy/index.html">Privacy Policy</a>
+		<br><br>
+		ⓒThe Angels, All Rights Reserved.
+	</div>
+	<hr class="spaceL">
+</body>
+
+</html>
