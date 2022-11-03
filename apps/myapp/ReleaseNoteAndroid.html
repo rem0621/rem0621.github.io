@@ -5,72 +5,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 	<title>MyApp Release Note - Android</title>
 	<style>
-		body { background-color: #111111; margin:0px; padding:0px; }
-		body, div { font-family: sans-serif, Helvetica, courier, verdana; font-size:14pt; line-height: 150%; color:#DDDDDD; }
-		a:link, a:visited, a:hover, a:active { color:#AAFFDD; text-decoration: none; }
-		.textButton {background-color:#000000; padding:8px 20px 8px 20px; border: 3px dotted #AAFFDD; }
-		.txtBig{ font-size: 22pt; font-weight: bold }
-		.button_bar { width:180px; padding:2px; }
-		.container{
-			display: block;
-		  	height:300px;
-		  	padding:0px;
-		  	margin:0px;
-			text-align: center;
-			background-color: #101020;
-		}
-		.backImage{
-			display: block;
-			width : 100%;
-			max-height: 300px;
-			min-height:300px;
-			object-fit: cover;
-			position:absolute;
-			z-index: 0;
-			opacity: 0.4;
-			
-		}
-		.contents{
-			height:100%;
-			position:relative;
-			z-index:1;
-			text-shadow:
-				0px 0px 10px #000000,
-				0px 1px 14px #000000,
-				1px 2px 20px #000000;
-			padding:20px;
-		}
-
-		.backFar{
-			position:fixed;
-			display:block;
-			opacity:0.3;
-			z-index:-1;
-
-			max-width: 100%;
-			min-width: 100%;
-			max-height: 100%;
-			min-height: 100%;
-			object-fit: cover;
-		}
-
 		/* added */
 		.imgIconSmall { width:30px; }
 		.imgIconMiddle { width:48px; }
 		.alignCenter { text-align: center; }
 		.alignMiddle { vertical-align: middle;}
-
+		
 		.spaceS { height:10px; border:none; margin:0; padding:0; }
 		.spaceM { height:20px; border:none; margin:0; padding:0; }
 		.spaceL { height:40px; border:none; margin:0; padding:0; }
 
-		.mainImageContainer { display: block; height:350px; padding:0px; margin:0px; text-align: center; }
-		.mainImage { display: block; width : 100%; max-height: 350px; min-height:350px; object-fit: cover; position:absolute; z-index: 0; opacity: 1.0;}
-		.mainTextOnImage { height:100%; position:relative; z-index:1; text-shadow: 0px 0px 10px #000000, 0px 1px 14px #000000, 1px 2px 20px #000000; padding:10px; }
-		
+		.badge-new
+		{
+			background-color:gray;
+			color:#43a047
+		}
+		.badge-green{background-color:rgba(68,162,72,.08);color:#43a047}
+		.badge-bluegreen{background-color:rgba(0,153,110,.08);color:#009a6f}
+		.badge-yellow{background-color:rgba(230,130,0,.08);color:#e68200}
+		.badge-red{background-color:rgba(220,24,24,.08);color:#dc1919}
+		.badge-purple{background-color:rgba(90,37,203,.08);color:#5925cd}
+		.badge-violet{background-color:rgba(144,28,202,.08);color:#8f1bc8}
+		.badge-brown{background-color:rgba(109,45,24,.08);color:#6f2e18}
+		.badge-blue{background-color:rgba(24,73,220,.08);color:#194bdc}*/
+		.badge-hotpink{background-color:rgba(217,69,121,.08);color:#d94477}
+
 		/* marquee */
 		.marquee {
-			height: 40px;	
+			height: 40px;
 			overflow: hidden;
 			position: relative;
 			color: #AAFFDD;
@@ -98,22 +60,72 @@
 			0%   { transform: translateX(100%); }
 			100% { transform: translateX(-100%); }
 		}
+		
+		table
+		{
+			border-top:1px solid;
+			border-bottom:1px solid;
+			border-collapse: collapse;
+		}
+		th, td
+		{
+			border: 1px solid;
+			padding: 10px 5px;
+		}
+		/* 헤더 컬러 설정 */
+		th
+		{
+			background-color:cyan;
+			color: blue;
+		}
+		/*짝수줄만 배경색 지정*/
+		tr:nth-child(2n+0)
+		{
+			background-color: gray;
+		}
+		.feature_new
+		{
+			background-color:cyan;
+			color:blue;
+		}
 	</style>
 </head>
 <body>
-	<div class="alignCenter">
+	<h2>
 		내앱 Android 릴리즈 노트
+	</h2>
+
+	<div>
+	<table class="tbl_type1">
+		<thead>
+			<tr >
+				<th width="14%">버전</th>
+				<th width="26%">날짜</th>
+				<th width="60%">변경이력</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td align="center">v 1.0.0</td>
+				<td align="center">2022.11.xx</td>
+				<td align="left">
+					디데이
+					<br>- <code class='feature_new'>New</code> 디데이 그룹 및 목록 관리 기능
+					<br>- <code class='feature_new'>New</code> 디데이 로컬 알림 기능
+				</td>
+			</tr>
+		</tbody>
+	</table>
 	</div>
 
 	<!-- footer -->
-	<hr class="spaceL">
+	<hr class="spaceM">
 	<div class="alignCenter">
 		<a href="mailto:theangels0621@gmail.com">Email</a> |
 		<a href="policy/index.html">Privacy Policy</a>
 		<br><br>
 		ⓒThe Angels, All Rights Reserved.
 	</div>
-	<hr class="spaceL">
 </body>
 
 </html>
